@@ -2,17 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+    </head>
 <body>
-    <p>My Projects:</p>
-    <ul>
-    <li><a href="https://adanjer.github.io/activity/daviesburger.html" target="_blank">Davies Burger</a></li>
-    <li><a href="https://adanjer.github.io/activity/WineFeSschedule.html" target="_blank">Wine Festival Schedule</a></li>
-    <li><a href="https://adanjer.github.io/activity/fashionblog.html" target="_blank">Fashion Blog</a></li>
-    </ul>
+    <div class="banner">
+        <div>
+          <h1>Welcome to My Portfolio!!!</h1>
+        </div>  
+      </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="practice.html">Home</a></li>
+                <li><a href="about/index.html">About Me</a></li>
+                <li id="webdev-link"><a href="#">Web Development</a></li>
+            </ul>
+        </div>
+    </nav>
+     
+    <!-- Web Development Section -->
+     <section id="web-development" style="display: none;">
+        <h2>Web Development</h2>
+        <ul>
+            <li><a href="#learn-html">Learn HTML Activities</a></li>
+            <li><a href="#learn-css">Learn CSS Activities</a></li>
+            <li><a href="#showcase-projects">Showcase Projects</a></li>
+            <li><a href="#financial-tracker-app">Financial Tracker App</a></li>
+        </ul>
+    </section>
+
+    <!-- Home Page (index.html) -->
+    <section id="home" style="text-align: center;">
+        <h3>"Explore my web development journey and projects"</h3>
+    </section>
+
+    <!-- About Me Page -->
+    <section id="about" style="text-align: center;">
+        <h2>About Me</h2>
+        <p>I'm Jeremy R. Adan from University of the Immaculate Conception in Information Technology. I love learning new things and technologies.</p>
+        <p>You can download my <a href=".docx">resume</a> here.</p>
+    </section>
+
+    <!-- Learn HTML Activities Page -->
+    <section id="learn-html">
+        <h2>Learn HTML Activities</h2>
+        <p>During my web development journey, I completed several HTML activities to build a strong foundation in web development.</p>
+        <h3>[HTML Activity]</h3>
+        <p>This activity involved creating a basic HTML webpage structure. Here are some:</p>
+        <p>
+            <span><mark>Learn HTML:</mark></span>
+            <a href="learnyouhtml.txt" target="_blank" class="button">View</a>
+        </p>
+        <p>
+            <span><mark>Fashion Blog Project:</mark></span>
+            <a href="https://adanjer.github.io/activity/fashionblog.html" target="_blank" class="button">View</a>
+        </p>
+        <p>
+            <span><mark>Wine Festival Schedule Project:</mark></span>
+            <a href="https://adanjer.github.io/activity/WineFeSschedule.html" target="_blank" class="button">View</a>
+        </p>
+        <p>
+            <span><mark>Davies Burger Web Project:</mark></span>
+            <a href="https://adanjer.github.io/activity/daviesburger.html" target="_blank" class="button">View</a>
+        </p>
+        <p>It was a great learning experience, and I gained valuable insights into HTML structure.</p>
+        <!-- Repeat similar sections for other HTML activities -->
+    </section>
+
+    <!-- Learn CSS Activities Page -->
+    <section id="learn-css" style="text-align: center;">
+        <h2>Learn CSS Activities</h2>
+        <p>My CSS journey was equally exciting. I learned how to style web pages and make them visually appealing.</p>
+        <h3>[CSS Activity]</h3>
+        <p>In this activity, I created CSS styles for a simple webpage. Here's a proof of my completion to the course:</p>
+        <img src="Learn css completion.png" alt="Learn CSS activity completion">
+        <p>It was a creative process, and I enjoyed working on the design aspects of web development.</p>
+        <!-- Repeat similar sections for other CSS activities -->
+    </section>
+
+    <!-- Showcase Projects Page -->
+    <section id="showcase-projects" >
+        <h2>Showcase Projects</h2>
+        <p>Here are some of the web development projects I've worked on:</p>
+        <h3>[HTML Project 1: Personal Blog]</h3>
+        <li><a href="https://Adanjer.github.io/" target="_blank" class="button">View</a></li>
+        <p>This project involved creating a personal blog website using HTML and CSS. It allowed me to practice structuring content and styling web pages.</p>
+        <!-- Repeat similar sections for other projects -->
+    </section>
+
+    <!-- Financial Tracker App Page -->
+    <section id="financial-tracker-app" >
+        <h2>Financial Tracker App</h2>
+        <p>My core portfolio project for this term is a simple Financial Tracker App. Here's a wireframe screenshot:</p>
+        <li><a href="ss_myWireframe.png" alt="Financial Tracker App Wireframe Screenshot" target="_blank" class="button">View</a></li>
+        <p>I'm excited to showcase this project, which I built using HTML, CSS, and JavaScript. It's a tool to track personal finances.</p>
+    </section>
+
+    <!-- Sample Repository Hierarchy (for reference) -->
+    <section id="sample-repo-hierarchy" style="text-align: center;">
+        <h2>Sample Repository Hierarchy</h2>
+        <p>Here's the structure of my sample portfolio repository:</p>
+        <img src="Capture.png" alt="Sample Repository Hierarchy">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 JRA</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle visibility of Web Development sub-categories
+        const webDevLink = document.getElementById('webdev-link');
+        const webDevSection = document.getElementById('web-development');
+
+        webDevLink.addEventListener('click', () => {
+         if (webDevSection.style.display === 'none' || webDevSection.style.display === '') {
+                webDevSection.style.display = 'block';
+            } else {
+                webDevSection.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
