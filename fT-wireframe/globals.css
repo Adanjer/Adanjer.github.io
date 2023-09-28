@@ -1,0 +1,24 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Keania+One:400|Luxurious+Roman:400|Gideon+Roman:400|Inter:300,600,500,400,700|Dela+Gothic+One:400|Roboto:500,400|Fredoka:700");
+@font-face {
+  font-family: "Impact-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6247dc035a1f4749cec51e2c/fonts/impact.ttf")
+    format("truetype");
+}
