@@ -3,128 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Myportfolio</title>
+</head>
 <body>
-    <div class="banner">
-        <div>
-          <h1>Welcome to My Portfolio!!!</h1>
-        </div>  
-      </div>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-container">
-            <ul>
-                <li><a href="practice.html">Home</a></li>
-                <li><a href="about/index.html">About Me</a></li>
-                <li id="webdev-link"><a href="#">Web Development</a></li>
-            </ul>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
         </div>
-    </nav>
+        </div>
+<nav>
+      <div class="nav-logo">
+        <a href="*">
+            <img src="images/R-removebg-preview.png">
+        </a>
+      </div>
+
+      <ul class="nav-links">
+          <li id="linkHome" class="link"><a href="#home" >Home</a></li>
+          <li id="linkProjects" class="link"><a href="#projects" >Projects</a></li>
+          <li id="linkAbout" class="link"><a href="#about" >About</a></li>
+          <li id="linkContact" class="link"><a href="#contact" >Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="bx bx-menu"></i>
+    </div>
+    
+</nav>
+
+<!--Home section design-->
+<header class="container">
+    <div id="home" class="content">
+        <h4>CREATE YOUR IMAGINATION LIMITLESS!!!</h4>
+        <h1><span class="animated-text"></span></h1>
+        <p>
+            Welcome to My Portfolio! Explore my web development projects and journey that embark 
+            on a boundless possibilities with me. In the realm of technology and innovation,
+            I seek the intricate tapestry of code and creativity.
+        </p>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+        <button class="btn">Get Started</button>
+    </div>
+    <div class="image">
+        <img src="images/vecteezy_3d-iconos-ocupacion-trabajo-avatar-para-social-medios-de_28169662.png">
+    </div>
+</header>
+
+<!--About section design-->
+<section id="about" class="about" >
+    <div class="about-img">
+        <img src="images/vecteezy_ai-generative-3d-business-theme-rich-man-with-money_27737091.PNG">
+     </div>
+       <div class="about-text"> `
+             <h1>About<span>Me</span></h1>
+             <h4>College Student</h4>
+             <p>
+                Hello there! I'm Jeremy, an ambitious 2nd year IT student with a curiosity for all things tech from University 
+                of the Immaculate Conception in College of Computer Studies. For now, I am 21 years old and lived 
+                in Country Homes, Cabantian, Davao City. I love learning new things and technologies. I find joy in
+                unraveling the mysteries of code and exploring the ever-evolving world of technology. 
+            </p>
+            <p>
+                My journey in this field is not just about mastering languages and frameworks; it's about embracing 
+                the creative challenges that come with turning lines of code into functional and innovative solutions.
+                Beyond the digital realm, I appreciate the beauty of problem-solving and the thrill of learning
+                something new every day. When I'm not immersed in the world of technology, you might find me
+                exploring diverse hobbies, connecting with fellow enthusiasts, or contemplating the next big idea
+                that sparks my imagination.
+            </p>
+            <a href="images/_Coming Soon  Post.png"><button class="btn">More About Me</button></a>
+       </div>
+</section>
+
+<!--Projects section design-->
+<section id="projects" class="container">
+    <h2 class="header">MyProjects!</h2>
+    
+    <div class="Projects">
+        <div class="card">
+            <img src="images/learnyouhtml.png" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"learnyouhtml"</h4>
+            <P>
+                The "learnyouhtml" project is a hands-on learning experience focused on HTML. 
+                Explore the world of web development by creating and styling web pages. Check out the 
+                project on GitHub here.
+            </P>
+            <a href="https://github.com/Adanjer/Adanjer.github.io/blob/main/assets/css/learnyouhtml">see here<i class='bx bx-link-external' ></i></a>   
+         </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Diane_von_Fürstenberg_Spring-Summer_2014_06.jpg" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"fashionblog"</h4>
+            <P>
+                Immerse yourself in the latest fashion trends with the "fashionblog" project. Discover 
+                and share fashion insights, styles, and inspirations. Visit the Fashion Blog here to stay 
+                updated on the latest trends.
+            </P>
+            <a href="https://adanjer.github.io/activity/fashionblog.html">see here<i class='bx bx-link-external' ></i></a>
+         </div>
+        </div>
+
+        <div class="card">
+            <img src="images/wine-fe.jpg" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"Wine Festival Schedule"</h4>
+            <P>
+                Explore the world of wines with the "Wine Festival Schedule" project. Plan your visit 
+                to wine festivals and stay informed about event schedules. View the schedule here.
+            </P>
+            <a href="https://adanjer.github.io/activity/WineFeSschedule.html" >see here<i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="images/D'S-BURGERS.PNG" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"Davie's burger"</h4>
+            <P>
+                Savor the flavors of "Davie's burger" project, a virtual space dedicated to delicious burgers and other menus. 
+                Discover the menu and indulge in a virtual burger experience. Visit Davie's Burger here to satisfy your burger 
+                cravings.
+            </P>
+            <a href="https://adanjer.github.io/activity/daviesburger.html">see here<i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="images/ft-logo.jpg" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"Financial tracker (Wireframe)"</h4>
+            <P>
+                Dive into financial organization with the "Financial tracker (Wireframe)" project. This wireframe 
+                provides a visual representation of a financial tracking application. Explore the wireframe on Figma 
+                here and stay updated on the latest representational features of the wireframe.
+            </P>
+            <a href="https://www.figma.com/file/MhGe2ZUPBqfGLQlIB3BNjQ/ME-FINANCIAL-TRACKER?type=design&node-id=0%3A1&mode=design&t=HTZF3J9AnfVSwuoW-1">see here<i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/bsrs-logo.jpg" alt="">
+            <span><i class='bx bxs-devices'></i></span>
+            <div class="project-layer">
+            <h4>"Bookstore Reservation System (Prototype)"</h4>
+            <P>
+                Experience the future of book shopping with the "Bookstore Reservation System (Prototype)." This part of the project 
+                is a group final project this first half or semester, school year 2023-2024 that likely involves a system for reserving 
+                books in a virtual bookstore, inspired by the University. The prototype is under development and it will expectedly 
+                continue in my second semester.
+            </P>
+            <a href="#">see here<i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact section design-->
+<section id="contact" class="contact">
+    <div class="contact-text">
+        <h2>Contact<span>Me</span></h2>
+        <h4>Let's work Together!</h4>
+        <p>Have a question, suggestion, or just want to chat? Feel free to reach out to me. I'm always open to
+            new connections and opportunities. Feel free to drop me a message or connect with me on social media. 
+            I'm looking forward to hearing from you!!</p>
+            <div class="contact-list">
+                <li><i class='bx bx-send' ></i>jadan_220000002083@uic.edu.ph</li>
+                <li><i class='bx bx-phone' ></i>+63 9363978183</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100089122886031&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="" placeholder="Enter your Name" required>
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="" placeholder="Enter your Subject">
+
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+            <input type="submit" value="submit" class="btn">
+        </form>
+     </div>
+</section>
+
+<div class="copyright">
+    <p>Copyright © 2023 JRA. All Rights Reserved.</p>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+
+
+      var typed = new Typed(".animated-text", {
+        strings: ["Hi! I'm Jeremy Adan,", "And a Student!!!", "And a Son!!!", "And a Brother!!!", "And a Friend!!!"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+      })
+    
+     function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    
+     const bgAnimation = document.getElementById
+        ('bgAnimation');
+     const numberOfColorBoxes = 400;
      
-    <!-- Web Development Section -->
-     <section id="web-development" style="display: none;">
-        <h2>Web Development</h2>
-        <ul>
-            <li><a href="#learn-html">Learn HTML Activities</a></li>
-            <li><a href="#learn-css">Learn CSS Activities</a></li>
-            <li><a href="#showcase-projects">Showcase Projects</a></li>
-            <li><a href="#financial-tracker-app">Financial Tracker App</a></li>
-        </ul>
-    </section>
+     for(let i= 0; i < numberOfColorBoxes; i++) {
+        const colorBox = document.createElement('div');
+        colorBox.classList.add('colorBox');
+        bgAnimation.append(colorBox)
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+    
+    const getStartedButton = document.querySelector('.btn'); 
 
-    <!-- Home Page (index.html) -->
-    <section id="home" style="text-align: center;">
-        <h3>"Explore my web development journey and projects"</h3>
-    </section>
+    if (getStartedButton) {
+        getStartedButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            scrollToElement('.about', -250); 
+        });
+    }
+  });
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.nav-links li');
 
-    <!-- About Me Page -->
-    <section id="about" style="text-align: center;">
-        <h2>About Me</h2>
-        <p>I'm Jeremy R. Adan from University of the Immaculate Conception in Information Technology. I love learning new things and technologies.</p>
-        <p>You can download my <a href=".docx">resume</a> here.</p>
-    </section>
+        function scrollToElement(elementSelector, offset = 0) {
+            const element = document.querySelector(elementSelector);
 
-    <!-- Learn HTML Activities Page -->
-    <section id="learn-html">
-        <h2>Learn HTML Activities</h2>
-        <p>During my web development journey, I completed several HTML activities to build a strong foundation in web development.</p>
-        <h3>[HTML Activity]</h3>
-        <p>This activity involved creating a basic HTML webpage structure. Here are some:</p>
-        <p>
-            <span><mark>Learnyouhtml:</mark></span>
-            <a href="https://github.com/Adanjer/Adanjer.github.io/blob/main/assets/css/learnyouhtml" target="_blank" class="button">View</a>
-        </p>
-        <p>
-            <span><mark>Fashion Blog Project:</mark></span>
-            <a href="https://adanjer.github.io/activity/fashionblog.html" target="_blank" class="button">View</a>
-        </p>
-        <p>
-            <span><mark>Wine Festival Schedule Project:</mark></span>
-            <a href="https://adanjer.github.io/activity/WineFeSschedule.html" target="_blank" class="button">View</a>
-        </p>
-        <p>
-            <span><mark>Davies Burger Web Project:</mark></span>
-            <a href="https://adanjer.github.io/activity/daviesburger.html" target="_blank" class="button">View</a>
-        </p>
-        <p>It was a great learning experience, and I gained valuable insights into HTML structure.</p>
-        <!-- Repeat similar sections for other HTML activities -->
-    </section>
+            if (element) {
+                const offsetTop = element.offsetTop - offset;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        }
 
-    <!-- Learn CSS Activities Page -->
-    <section id="learn-css" style="text-align: center;">
-        <h2>Learn CSS Activities</h2>
-        <p>My CSS journey was equally exciting. I learned how to style web pages and make them visually appealing.</p>
-        <h3>[CSS Activity]</h3>
-        <p>In this activity, I created CSS styles for a simple webpage. Here's a proof of my completion to the course:</p>
-        <img src="https://raw.githubusercontent.com/Adanjer/Adanjer.github.io/main/assets/css/Learn%20css%20completion.png" alt="Learn CSS activity completion">
-        <p>It was a creative process, and I enjoyed working on the design aspects of web development.</p>
-        <!-- Repeat similar sections for other CSS activities -->
-    </section>
+        function highlightNavLink(link) {
+            navLinks.forEach(link => link.classList.remove('active-link'));
+            link.classList.add('active-link');
+        }
 
-    <!-- Showcase Projects Page -->
-    <section id="showcase-projects" >
-        <h2>Showcase Projects</h2>
-        <p>Here are some of the web development projects I've worked on:</p>
-        <h3>[HTML Project 1: Personal Blog]</h3>
-        <li><a href="https://Adanjer.github.io/" target="_blank" class="button">View</a></li>
-        <p>This project involved creating a personal blog website using HTML and CSS. It allowed me to practice structuring content and styling web pages.</p>
-        <!-- Repeat similar sections for other projects -->
-    </section>
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSectionId = this.getAttribute('data-target');
+                scrollToElement(targetSectionId, 50); // Adjusted the offset for a smoother scroll
+                highlightNavLink(this);
+            });
+        });
 
-    <!-- Financial Tracker App Page -->
-    <section id="financial-tracker-app" >
-        <h2>Financial Tracker App</h2>
-        <p>My core portfolio project for this term is a simple Financial Tracker App. Here's a wireframe screenshot:</p>
-        <li><a href="https://adanjer.github.io/FT_Hwireframe" alt="Financial Tracker App Wireframe Screenshot" target="_blank" class="button">View</a></li>
-        <p>I'm excited to showcase this project, which I built using HTML, CSS, and JavaScript. It's a tool to track personal finances.</p>
-    </section>
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
 
-    <!-- Sample Repository Hierarchy (for reference) -->
-    <section id="sample-repo-hierarchy" style="text-align: center;">
-        <h2>Sample Repository Hierarchy</h2>
-        <p>Here's the structure of my sample portfolio repository:</p>
-        <img src="https://raw.githubusercontent.com/Adanjer/Adanjer.github.io/main/assets/css/Capture.PNG" alt="Sample Repository Hierarchy">
-    </section>
+            navLinks.forEach(link => {
+                const targetSectionId = link.getAttribute('data-target');
+                const targetSection = document.querySelector(targetSectionId);
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 JRA</p>
-    </footer>
+                if (targetSection) {
+                    const sectionTop = targetSection.offsetTop - 50;
+                    const sectionBottom = sectionTop + targetSection.offsetHeight;
 
-    <script>
-        // JavaScript to toggle visibility of Web Development sub-categories
-        const webDevLink = document.getElementById('webdev-link');
-        const webDevSection = document.getElementById('web-development');
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        highlightNavLink(link);
+                    }
+                }
+            });
+        });
+    });
 
-        webDevLink.addEventListener('click', () => {
-         if (webDevSection.style.display === 'none' || webDevSection.style.display === '') {
-                webDevSection.style.display = 'block';
-            } else {
-                webDevSection.style.display = 'none';
+    document.addEventListener('DOMContentLoaded', function () {
+        const nav = document.querySelector('nav');
+
+        // Function to toggle the navigation bar visibility
+        function toggleNavBar() {
+            nav.classList.toggle('hidden');
+        }
+
+        // Add event listeners for hover
+        nav.addEventListener('mouseenter', function () {
+            if (nav.classList.contains('hidden')) {
+                toggleNavBar();
             }
         });
+
+        nav.addEventListener('mouseleave', function () {
+            if (!nav.classList.contains('hidden')) {
+                toggleNavBar();
+            }
+        });
+    });
+
+    function scrollToElement(elementSelector, offset = 0) {
+        const element = document.querySelector(elementSelector);
+
+        if (element) {
+            const offsetTop = element.offsetTop - offset;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const linkHome = document.querySelector('.nav-links li:nth-child(1) a');
+        const linkProjects = document.querySelector('.nav-links li:nth-child(2) a');
+        const linkAbout = document.querySelector('.nav-links li:nth-child(3) a');
+        const linkContact = document.querySelector('.nav-links li:nth-child(4) a');
+
+        linkHome.addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollToElement('header', 500);
+        });
+
+        linkProjects.addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollToElement('#projects', -10);
+        });
+
+        linkAbout.addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollToElement('.about', -250);
+        });
+
+        linkContact.addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollToElement('.contact', -20);
+        });
+    });
+
     </script>
 </body>
 </html>
